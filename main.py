@@ -1,5 +1,13 @@
 import tkinter as tk
 
+def add_new_record():
+    pass
+
+
+def show_clients():
+    pass
+
+
 def main():
     root = tk.Tk()
 
