@@ -9,6 +9,11 @@ def add_new_record():
     name_entry = tk.Entry(new_record)
     name_entry.grid(row=0, column=1)
 
+    last_name_label = tk.Label(new_record, text='Last Name')
+    last_name_label.grid(row=1, column=0)
+    last_name_entry = tk.Entry(new_record)
+    last_name_entry.grid(row=1, column=1)
+
 def show_clients():
     pass
 
