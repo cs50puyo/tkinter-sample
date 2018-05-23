@@ -1,5 +1,8 @@
 import tkinter as tk
 
+def create_new_client():
+    pass
+
 
 def add_new_client():
     new_client = tk.Toplevel()
@@ -31,5 +34,7 @@ def add_new_client():
     class_option_menu = tk.OptionMenu(new_client, selected_class, *CLASSES)
     class_option_menu.grid(row=3, column=1)
 
-    new_client_button = tk.Button(new_client, text='Create New Record')
+    new_client_button = tk.Button(new_client,
+                                  text='Create New Client',
+                                  command=create_new_client)
     new_client_button.grid(row=4, column=1)
