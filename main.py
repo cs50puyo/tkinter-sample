@@ -4,6 +4,10 @@ def add_new_record():
     new_record = tk.Toplevel()
     new_record.title('New Client')
 
+    name_label = tk.Label(new_record, text='Name')
+    name_label.grid(row=0, column=0)
+    name_entry = tk.Entry(new_record)
+    name_entry.grid(row=0, column=1)
 
 def show_clients():
     pass
