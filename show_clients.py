@@ -12,7 +12,8 @@ def show_clients():
     label_clients.pack(fill=tk.X)
 
     records_path = 'clients/'
-    records = [f for f in listdir(records_path) if isfile(join(records_path, f))]
+    records = [f for f in listdir(records_path)
+               if isfile(join(records_path, f))]
 
     for record in records:
         with open(join(records_path, record)) as file:
