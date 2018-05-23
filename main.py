@@ -1,5 +1,9 @@
 import tkinter as tk
 
+from os import listdir
+from os.path import isfile, join
+
+
 from new_client import add_new_client
 
 
@@ -9,6 +13,9 @@ def show_clients():
 
     label_clients = tk.Label(clients, text='Clients')
     label_clients.pack(fill=tk.X)
+
+    records_path = 'clients/'
+    records = [f for f in listdir(records_path) if isfile(join(records_path, f))]
 
 def main():
     root = tk.Tk()
