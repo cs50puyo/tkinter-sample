@@ -2,7 +2,7 @@ import tkinter as tk
 
 
 def create_new_client(id, name, last_name, classroom, window):
-    unique_name = f'{id}_{last_name}_{name}.txt'
+    unique_name = f'clients/{id}_{last_name}_{name}.txt'
     with open(unique_name, 'w') as new_record:
         new_record.write(f'Name: {name}\n')
         new_record.write(f'Last Name: {last_name}\n')
