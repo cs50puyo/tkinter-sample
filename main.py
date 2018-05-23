@@ -1,7 +1,8 @@
 import tkinter as tk
 
 def add_new_record():
-    pass
+    new_record = tk.Toplevel()
+    new_record.title('New Client')
 
 
 def show_clients():
