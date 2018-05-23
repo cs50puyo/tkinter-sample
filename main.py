@@ -2,9 +2,13 @@ import tkinter as tk
 
 from new_client import add_new_client
 
-def show_clients():
-    pass
 
+def show_clients():
+    clients = tk.Toplevel()
+    clients.title('Clients')
+
+    label_clients = tk.Label(clients, text='Clients')
+    label_clients.pack(fill=tk.X)
 
 def main():
     root = tk.Tk()
