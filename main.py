@@ -30,6 +30,9 @@ def add_new_record():
     class_option_menu = tk.OptionMenu(new_record, selected_class, *CLASSES)
     class_option_menu.grid(row=3, column=1)
 
+    new_record_button = tk.Button(new_record, text='Create New Record')
+    new_record_button.grid(row=4, column=1)
+
 
 def show_clients():
     pass
