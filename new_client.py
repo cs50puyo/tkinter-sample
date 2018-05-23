@@ -18,7 +18,7 @@ def add_new_client():
     last_name_entry = tk.Entry(new_client)
     last_name_entry.grid(row=1, column=1)
 
-    id_label = tk.Label(new_client, text='Name')
+    id_label = tk.Label(new_client, text='Id')
     id_label.grid(row=2, column=0)
     id_entry = tk.Entry(new_client)
     id_entry.grid(row=2, column=1)
