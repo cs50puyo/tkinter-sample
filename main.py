@@ -10,6 +10,7 @@ def show_clients():
 
 def main():
     root = tk.Tk()
+    root.title('Bar register')
 
     frame = tk.Frame(root)
     frame.pack(padx=100, pady=100)
