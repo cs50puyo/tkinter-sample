@@ -13,13 +13,9 @@ def main():
 
     frame = tk.Frame(root)
     frame.pack(padx=100, pady=100)
-<<<<<<< HEAD
-    new_record_button = tk.Button(frame, text='New Record')
-=======
     new_record_button = tk.Button(frame,
                                   text='Add New Client',
                                   command=add_new_record)
->>>>>>> cf2a314... Change text of new record button
     new_record_button.pack()
     show_clients_button = tk.Button(frame, text='Show Clients')
     show_clients_button.pack()
