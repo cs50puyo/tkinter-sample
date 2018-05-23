@@ -16,7 +16,9 @@ def main():
                                   text='Add New Client',
                                   command=add_new_client)
     new_client_button.pack()
-    show_clients_button = tk.Button(frame, text='Show Clients')
+    show_clients_button = tk.Button(frame,
+                                    text='Show Clients',
+                                    command=show_clients)
     show_clients_button.pack()
 
     root.mainloop()
